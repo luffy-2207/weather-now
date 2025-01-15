@@ -1,4 +1,4 @@
-from weather_api import get_weather
+from weather_app import get_weather
 
 def display_weather(weather):
     if "error" in weather:
@@ -14,7 +14,7 @@ def display_weather(weather):
 
 def main():
     print("Welcome to Weather-Now!")
-    API_KEY = "98c1c1bfd020ff1a880bd59d9eae7c0b"  # Replace with your API key
+    API_KEY = "98c1c1bfd020ff1a880bd59d9eae7c0b"
     while True:
         city = input("\nEnter city name (or type 'exit' to quit): ").strip()
         if city.lower() == "exit":
